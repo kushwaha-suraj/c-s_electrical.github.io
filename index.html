@@ -16,7 +16,6 @@
   <style>
     * {
       margin-top: 0;
-      margin-left: 0;
       margin-right: 0;
     }
 
@@ -24,14 +23,11 @@
       text-align: right;
     }
 
-    ul {
-      margin-left: 600pt;
-      margin-right: 0pt;
-    }
-    .g-recaptcha
-    {
+
+    .g-recaptcha {
       margin-left: 100;
     }
+
     img {
       margin-top: 0;
     }
@@ -41,7 +37,7 @@
     }
 
     table {
-      margin-left: 100;
+      text-align: center;
     }
 
     .footer {
@@ -165,7 +161,7 @@
       height: 100%;
     }
 
-    select{
+    select {
       width: 490px;
       color: gray;
     }
@@ -194,10 +190,6 @@
 
 <body>
 
-
-
-
-
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -205,7 +197,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
 
         <li class="nav-item">
           <a class="nav-link" href="#">News & Media</a>
@@ -229,56 +221,64 @@
     <img src="Images/16602499_1250832891668886_7698308410762201619_o.jpg" width="200px" height="200px">
   </div>
 
-  <ul class="breadcrumb">
+  <nav class="navbar navbar-expand-lg navbar-secondary bg-light">
 
-    <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
-    <li class="breadcrumb-item"><a href="About_us.html">ABOUT US</a></li>
-    <li class="breadcrumb-item"><a href="Market_segments.html">MARKET SEGMENT</a></li>
-    <li class="breadcrumb-item"><a href="https://cselectric.co.in/blog/">BLOG</a></li>
-    <li class="breadcrumb-item" data-toggle="modal" data-target="#myModal"><a href="#">ENQUIRE NOW</a></li>
-    <li class="breadcrumb-item"><a href="form.html">LOGIN NOW</a></li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
 
-    <div class="container">
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-            </div>
-            <form action="?" method="POST">
-              <h1>Enquire Form</h1>
-              <input type="text" size="48" placeholder="Name*"></input><br><br>
-              <input type="text" size="48" placeholder="Email*"></input><br><br>
-              <input type="text" size="48" placeholder="Mobile No.*"></input><br><br>
-              <input type="text" size="48" placeholder="Location*"></input><br><br>
-              <select row="8" Required>
-                <option value="" disabled selected hidden>Product Category*</option>
-                <option value="Low Voltage Control & Distribution Products">Low Voltage Control & Distribution Products
-                </option>
-                <option value="Low Voltage Switchgear">Low Voltage Switchgear</option>
-                <option value="Final Distribution Products">Final Distribution Products</option>
-                <option value="Low Voltage Switchboard">Low Voltage Switchboard</option>
-                <option value="Power Bus bar">Power Bus bar</option>
-                <option value="Protection & Measurement Devices">Protection & Measurement Devices</option>
-              </select><br><br>
-              <textarea cols="48" rows="7" placeholder="Message"></textarea><br><br>
-              <div class="g-recaptcha" data-sitekey="6LevlKAeAAAAAJkBbZZ8sMUZFWwwV_JYJxYtFZA3"></div>
-              <Button class="button"><b>Submit</b></Button>
-            </form>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="About_us.html">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="Market_segments.html">MARKET SEGMENT</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://cselectric.co.in/blog/">BLOG</a></li>
+        <li class="nav-item" data-toggle="modal" data-target="#myModal"><a class="nav-link" href="#">ENQUIRE NOW</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="form.html">LOGIN NOW</a></li>
+      </ul>
     </div>
+  </nav>
 
-  </ul>
+  <div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+
+        <div class="modal-content bg-light">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          </div>
+          <form action="?" method="POST">
+            <h1>Enquire Form</h1>
+            <input type="text" size="48" placeholder="Name*"></input><br><br>
+            <input type="text" size="48" placeholder="Email*"></input><br><br>
+            <input type="text" size="48" placeholder="Mobile No.*"></input><br><br>
+            <input type="text" size="48" placeholder="Location*"></input><br><br>
+            <select row="8" Required>
+              <option value="" disabled selected hidden>Product Category*</option>
+              <option value="Low Voltage Control & Distribution Products">Low Voltage Control & Distribution Products
+              </option>
+              <option value="Low Voltage Switchgear">Low Voltage Switchgear</option>
+              <option value="Final Distribution Products">Final Distribution Products</option>
+              <option value="Low Voltage Switchboard">Low Voltage Switchboard</option>
+              <option value="Power Bus bar">Power Bus bar</option>
+              <option value="Protection & Measurement Devices">Protection & Measurement Devices</option>
+            </select><br><br>
+            <textarea cols="48" rows="7" placeholder="Message"></textarea><br><br>
+            <div class="g-recaptcha" data-sitekey="6LevlKAeAAAAAJkBbZZ8sMUZFWwwV_JYJxYtFZA3"></div>
+            <Button class="button"><b>Submit</b></Button>
+          </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <BR>
   <BR>
   <BR>
@@ -362,19 +362,18 @@
   </h5>
   <br>
 
-  <table>
+  
+  <table class="container" >
     <tr>
       <td>
-        <div class="polaroid">
-          <img src="Images/LowVoltageproducts-Solutions-1.jpg" alt="5 Terre" style="width:400px" height="250px">
+        <div class="polaroid ">
+          <img src="Images/LowVoltageproducts-Solutions-1.jpg" style="width:400px" height="250px"/>
           <div class="container">
-            <p>Low Voltage Products & Solutions</p>
-          </div>
-        </div>
+            <p>Low Voltage Products & Solutions</p></div></div>
       </td>
 
       <td>
-        <div class="polaroid">
+        <div class="polaroid ">
           <img src="Images/FDP-Collage.jpg" alt="Norther Lights" style="width:400px" height="250px">
           <div class="container">
             <p>Final Distribution Products</p>
@@ -383,7 +382,7 @@
       </td>
 
       <td>
-        <div class="polaroid">
+        <div class="polaroid ">
           <img src="Images/Switchboard-Collage-2.jpg" alt="Norther Lights" style="width:400px" height="250px">
           <div class="container">
             <p>Low Voltage Switchboards</p>
@@ -394,7 +393,7 @@
 
     <tr>
       <td>
-        <div class="polaroid">
+        <div class="polaroid ">
           <img src="Images/busduct.png" alt="5 Terre" style="width:400px" height="250px">
           <div class="container">
             <p>Busduct</p>
@@ -403,7 +402,7 @@
       </td>
 
       <td>
-        <div class="polaroid">
+        <div class="polaroid ">
           <img src="Images/p1.jpg" alt="Norther Lights" style="width:400px" height="250px">
           <div class="container">
             <p>Bustrunking</p>
@@ -412,7 +411,7 @@
       </td>
 
       <td>
-        <div class="polaroid">
+        <div class="polaroid ">
           <img src="Images/protection-2.jpg" alt="Norther Lights" style="width:400px" height="250px">
           <div class="container">
             <p>Protection & Measurement Devices</p>
