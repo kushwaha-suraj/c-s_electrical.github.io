@@ -43,21 +43,43 @@ C&S Electrials About Us
 body {font-family: Verdana, sans-serif;}
 
 
-div.polaroid {
-  width: 400px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-  margin-right: 25px;
-  margin-left: 25px;
-}
 
-div.container {
-  text-align: center;
-  padding: 10px 20px;
-  color: rgb(62, 8, 211);
 
-}
+@media only screen and (max-width: 300px),
+    (min-device-width: 320px) and (max-device-width: 1024px) {
+      .text {
+        font-size: 11px
+      }
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+    }
+
+    div.polaroid {
+      width: 400px;
+      background-color: rgb(28, 13, 68);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+
+    div.polaroid img {
+      width: 400px;
+      height: 250px;
+    }
+
+    div.container {
+      text-align: center;
+      padding: 10px 20px;
+      color: white;
+    }
 form{
             width: 100%;
             height: 100%;
