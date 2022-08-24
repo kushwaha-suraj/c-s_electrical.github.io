@@ -1,13 +1,11 @@
-/******************************************
- * My Login
- *
- * Bootstrap 4 Login Page
- * 
- ******************************************/
+
 
 'use strict';
 
 $(function() {
+
+	
+	$("body").append(author);
 
 	$("input[type='password'][data-eye]").each(function(i) {
 		var $this = $(this),
@@ -69,8 +67,6 @@ $(function() {
           event.preventDefault();
           event.stopPropagation();
         }
-		
 		form.addClass('was-validated');
-		
 	});
 });

@@ -1,113 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Kodinger">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>My Login Page &mdash; Bootstrap 4 Login Page Snippet</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/my-login.css">
+	<style>
+		body
+		{
+			font-family: Verdana, sans-serif;
+		}
+		* {
+		  margin-top: 0;
+		  margin-left: 0;
+		  margin-right: 0;
+		}
+	
+		.navbar-toggler {
+		  text-align: right;
+		}
+	
+		img {
+		  margin-top: 0;
+		}
+	
+		h5 {
+		  color: grey;
+		}
+	
+		form {
+		  max-width: 100%;
+		  min-width: none;
+		  max-height: 100%;
+		  min-height: 100%;
+		}
+	
+		input,textarea{
+		  width: 100%;
+		}
+	
+		option,select {
+		width: 100%;
+		  color: gray;
+		}
+	
+		.button {
+		  background-color: rgb(58, 93, 247);
+		  color: white;
+		  width: 100%;
+		  height: 40px;
+		  font-size: 20px;
+		  border: 0;
+		  border-radius: 8px;
+		}
+		
+		div.container {
+		  padding: 10px 20px;
+	
+		}
+	
+		@media only screen and (max-width: 300px),
+		(min-device-width: 320px) and (max-device-width: 1024px) {
+		  .text {
+			font-size: 11px
+		  }
+		  
+		}
+	
+		h1 {
+		  color: blue;
+		  text-align: center;
+		}
+		</style>
 </head>
+
 <body class="my-login-page">
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-		  aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarText">
-		  <ul class="navbar-nav ml-auto">
-	
-			<li class="nav-item">
-			  <a class="nav-link" href="#">News & Media</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Download Center</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Certifications</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Careers</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Contact Us</a>
-			</li>
-		  </ul>
-		</div>
-	  </nav>
+			<ul class="navbar-nav ml-auto">
 
-	
-	  <nav class="navbar navbar-expand-lg navbar-secondary bg-light">
-	
+				<li class="nav-item">
+					<a class="nav-link" href="#">News & Media</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Download Center</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Certifications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Careers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<nav class="navbar navbar-expand-lg navbar-secondary bg-light">
+
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-		  aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarText">
-		  <ul class="navbar-nav ml-auto">
-	
-			<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-			<li class="nav-item"><a class="nav-link" href="About_us.html">ABOUT US</a></li>
-			<li class="nav-item"><a class="nav-link" href="Market_segments.html">MARKET SEGMENT</a></li>
-			<li class="nav-item"><a class="nav-link" href="https://cselectric.co.in/blog/">BLOG</a></li>
-			<li class="nav-item" data-toggle="modal" data-target="#myModal"><a class="nav-link" href="#">ENQUIRE NOW</a>
-			</li>
-			<li class="nav-item"><a class="nav-link" href="form.html">LOGIN NOW</a></li>
-		  </ul>
+			<ul class="navbar-nav ml-auto">
+
+				<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+				<li class="nav-item"><a class="nav-link" href="About_us.html">ABOUT US</a></li>
+				<li class="nav-item"><a class="nav-link" href="Market_segments.html">MARKET SEGMENT</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://cselectric.co.in/blog/">BLOG</a></li>
+				<li class="nav-item" data-toggle="modal" data-target="#myModal"><a class="nav-link" href="#">ENQUIRE
+						NOW</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="form.html">LOGIN NOW</a></li>
+			</ul>
 		</div>
-	  </nav>
-	
-	  <div class="container">
+	</nav>
+
+	<div class="container">
 		<div class="modal fade" id="myModal" role="dialog">
-		  <div class="modal-dialog">
-	
-	
-			<div class="modal-content bg-light">
-			  <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-	
-			  </div>
-			  <form action="?" method="POST">
-				<h1>Enquire Form</h1>
-				<input type="text" size="48" placeholder="Name*"></input><br><br>
-				<input type="text" size="48" placeholder="Email*"></input><br><br>
-				<input type="text" size="48" placeholder="Mobile No.*"></input><br><br>
-				<input type="text" size="48" placeholder="Location*"></input><br><br>
-				<select row="8" Required>
-				  <option value="" disabled selected hidden>Product Category*</option>
-				  <option value="Low Voltage Control & Distribution Products">Low Voltage Control & Distribution Products
-				  </option>
-				  <option value="Low Voltage Switchgear">Low Voltage Switchgear</option>
-				  <option value="Final Distribution Products">Final Distribution Products</option>
-				  <option value="Low Voltage Switchboard">Low Voltage Switchboard</option>
-				  <option value="Power Bus bar">Power Bus bar</option>
-				  <option value="Protection & Measurement Devices">Protection & Measurement Devices</option>
-				</select><br><br>
-				<textarea cols="48" rows="7" placeholder="Message"></textarea><br><br>
-				<div class="g-recaptcha container" data-sitekey="6LevlKAeAAAAAJkBbZZ8sMUZFWwwV_JYJxYtFZA3"></div>
-				<Button class="button"><b>Submit</b></Button>
-			  </form>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-			  </div>
+			<div class="modal-dialog">
+
+
+				<div class="modal-content bg-light">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+					</div>
+					<form action="?" method="POST">
+						<h1>Enquire Form</h1>
+						<input type="text" size="48" placeholder="Name*"></input><br><br>
+						<input type="text" size="48" placeholder="Email*"></input><br><br>
+						<input type="text" size="48" placeholder="Mobile No.*"></input><br><br>
+						<input type="text" size="48" placeholder="Location*"></input><br><br>
+						<select row="8" Required>
+							<option value="" disabled selected hidden>Product Category*</option>
+							<option value="Low Voltage Control & Distribution Products">Low Voltage Control &
+								Distribution Products
+							</option>
+							<option value="Low Voltage Switchgear">Low Voltage Switchgear</option>
+							<option value="Final Distribution Products">Final Distribution Products</option>
+							<option value="Low Voltage Switchboard">Low Voltage Switchboard</option>
+							<option value="Power Bus bar">Power Bus bar</option>
+							<option value="Protection & Measurement Devices">Protection & Measurement Devices</option>
+						</select><br><br>
+						<textarea cols="48" rows="7" placeholder="Message"></textarea><br><br>
+						<center>
+							<div class="g-recaptcha" data-sitekey="6LevlKAeAAAAAJkBbZZ8sMUZFWwwV_JYJxYtFZA3"></div>
+						</center>
+						<Button class="button"><b>Submit</b></Button>
+					</form>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
 			</div>
-	
-		  </div>
 		</div>
-	  </div>
-	  <BR>
-	  <BR>
-	  <BR>
-	  <BR>
-	  <br>
+	</div>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+	<br>
 	<section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-md-center align-items-center h-100">
 				<div class="card-wrapper">
 					<div class="brand">
-						<img src="Images/16602499_1250832891668886_7698308410762201619_o.jpg" alt="bootstrap 4 login page">
+						<img src="Images/16602499_1250832891668886_7698308410762201619_o.jpg"
+							alt="bootstrap 4 login page">
 					</div>
 					<div class="card fat">
 						<div class="card-body">
@@ -115,7 +190,8 @@
 							<form method="POST" class="my-login-validation" novalidate="">
 								<div class="form-group">
 									<label for="new-password">New Password</label>
-									<input id="new-password" type="password" class="form-control" name="password" required autofocus data-eye>
+									<input id="new-password" type="password" class="form-control" name="password"
+										required autofocus data-eye>
 									<div class="invalid-feedback">
 										Password is required
 									</div>
@@ -125,7 +201,7 @@
 								</div>
 
 								<div class="form-group m-0">
-									<button type="submit" class="btn btn-primary btn-block"  >
+									<button type="submit" class="btn btn-primary btn-block">
 										Reset Password
 									</button>
 								</div>
@@ -133,15 +209,20 @@
 						</div>
 					</div>
 					<div class="footer">
-						Copyright &copy; 2017 &mdash; Your Company 
+						Copyright &copy; 2017 &mdash; Your Company
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 	<script src="js/my-login.js"></script>
 </body>
+
 </html>
