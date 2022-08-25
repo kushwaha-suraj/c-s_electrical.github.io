@@ -62,10 +62,32 @@
       border-radius: 8px;
     }
 	
-	div.container {
-      padding: 10px 20px;
-
+    div.polaroid {
+      width: 400px;
+      height: 250px;
+	  padding: 10px 20px;
+      float: left;
+      position: relative;
+      transition: height 0.5s;
+      -webkit-transition: height 0.5s;
+      overflow: hidden;
+      transition: 0.5s;
+      background-color: rgb(28, 13, 68);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+      margin-right: 25px;
+      margin-left: 25px;
+      
     }
+
+    div.polaroid:hover{
+    height: auto;
+    width: 400px;
+    }
+
+    div.polaroid:hover, div.polaroid:active{box-shadow: 0 0 20px rgb(92, 88, 85); }
+
+    li.nav-item:hover, li.nav-item:active{text-shadow: 0 0 20px rgb(72, 77, 82); }
 
 	@media only screen and (max-width: 300px),
     (min-device-width: 320px) and (max-device-width: 1024px) {
